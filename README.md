@@ -59,3 +59,25 @@ The repo structure is as below..
                 -- SymmetricTree
                 -- 2Sum4InputBinarySearchTree
                 -- ValidateBinarySearchTree
+        
+        -- syntax
+            -- AnyOrAll
+            -- ArithmaticOperators
+            -- Conditions
+            -- Find
+            -- Functions
+            -- InnerAndOuter
+            -- Itertools
+            -- ListComprehensions
+            -- Lists
+            -- Loops
+            -- Maps
+            -- Mutations
+            -- NestedLists
+            -- Sets
+            -- Sorted
+            -- SplitAndJoin
+            -- StringFormat
+            -- StringValidations
+            -- SwapCase
+            -- Tuples
