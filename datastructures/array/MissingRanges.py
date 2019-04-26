@@ -21,7 +21,7 @@ def find_missing_ranges(nums, lower, upper):
 
     res = []
     for i in range(0, len(nums)):
-        prev = lower if i ==0 else lower + 1
+        prev = lower if i == 0 else lower + 1
 
         if prev < nums[i]:
             diff = nums[i]-prev
@@ -32,10 +32,10 @@ def find_missing_ranges(nums, lower, upper):
 
         lower = nums[i]
 
-        if i == len(nums ) -1 and nums[i] < upper:
+        if i == len(nums)-1 and nums[i] < upper:
             if upper-nums[i] > 1:
-                res.append("{}->{}".format(nums[i ] +1, upper))
+                res.append("{}->{}".format(nums[i]+1, upper))
             else:
-                res.append("{}".format(nums[i ] +1))
+                res.append("{}".format(nums[i]+1))
 
     return res

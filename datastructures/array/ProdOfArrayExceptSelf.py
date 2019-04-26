@@ -1,5 +1,7 @@
 """
-Given an array nums of n integers where n > 1,  return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
+Given an array nums of n integers where n > 1,
+return an array output such that output[i] is equal to the product of all the elements of nums
+except nums[i].
 
 Example:
 
@@ -19,7 +21,7 @@ def product_except_self(nums):
         output[i] *= left
         left *= nums[i]
 
-    for j in range(len(nums) - 1, -1, -1):
+    for j in range(len(nums)-1, -1, -1):
         output[j] *= right
         right *= nums[j]
 

@@ -19,8 +19,6 @@ def maxSubArray(nums):
     if n == 0:
         return 0
 
-    sume = nums[0]
-    p, q = 0, 0
     for i in range(1, n):
         if nums[i - 1] > 0:
             nums[i] += nums[i - 1]

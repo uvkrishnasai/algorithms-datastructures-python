@@ -40,3 +40,7 @@ def max_sliding_window(nums, k):
             continue
         maxi += maxi[:-2:-1]
     return maxi
+
+
+slide_arr = max_sliding_window([1,3,-1,-3,5,3,6,7], 3)
+print(slide_arr)
