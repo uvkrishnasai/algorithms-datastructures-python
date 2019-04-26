@@ -25,8 +25,8 @@ def find(nums, i, other_elem):
     try:
         if nums[i] == other_elem:
             return nums.index(other_elem, i + 1)
-        else:
-            return nums.index(other_elem)
-    except:
+    except Exception:
         return -1
+    else:
+        return nums.index(other_elem)
     pass

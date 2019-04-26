@@ -27,11 +27,6 @@ class TreeNode:
 
 class Solution:
     def build_tree(self, preorder, inorder):
-        """
-        :type preorder: List[int]
-        :type inorder: List[int]
-        :rtype: TreeNode
-        """
         if len(preorder) == 0 or len(inorder) == 0:
             return None
 
@@ -40,7 +35,6 @@ class Solution:
         return self.helper(cache, preorder, inorder, pstart, 0, len(inorder) - 1)
 
     def helper(self, cache, preorder, inorder, pstart, istart, iend):
-
         if istart > iend:
             return
 
@@ -52,7 +46,6 @@ class Solution:
             return root
 
         iind = cache[root_val]
-
         root.left = self.helper(cache, preorder, inorder, pstart, istart, iind - 1)
         root.right = self.helper(cache, preorder, inorder, pstart, iind + 1, iend)
 
